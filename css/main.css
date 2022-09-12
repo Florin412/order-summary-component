@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225deg, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card-conteiner {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(auto, 450px));
+  box-shadow: 0px 40px 45px -26px hsl(224deg, 23%, 55%);
+  border-radius: 0 0 1.3rem 1.3rem;
+  margin: 4.5rem 1.5rem;
+}
+.card-conteiner .img-section {
+  width: 100%;
+  height: 100%;
+}
+.card-conteiner .img-section .ilustration {
+  border-radius: 1.3rem 1.3rem 0 0;
+  width: 100%;
+  height: 100%;
+}
+.card-conteiner .content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2.7rem 3rem;
+  border-radius: 0 0 1.3rem 1.3rem;
+  text-align: center;
+}
+.card-conteiner .content-section .title {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.76rem;
+}
+.card-conteiner .content-section .description {
+  font-size: 16px;
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.6;
+}
+.card-conteiner .content-section .btn {
+  border: none;
+  background-color: transparent;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.card-conteiner .content-section .btn:hover {
+  transition: 0.5s;
+}
+.card-conteiner .content-section .plan-offer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 0.8rem;
+}
+.card-conteiner .content-section .plan-offer-box .left-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.card-conteiner .content-section .plan-offer-box .left-item .annual-plan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.card-conteiner .content-section .plan-offer-box .left-item .annual-plan-box .subtitle {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 1rem;
+  font-weight: 900;
+}
+.card-conteiner .content-section .plan-offer-box .left-item .annual-plan-box .price {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1.03rem;
+}
+.card-conteiner .content-section .plan-offer-box .right-item .change-btn {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 900;
+  padding: 1rem 0;
+}
+.card-conteiner .content-section .plan-offer-box .right-item .change-btn:hover {
+  color: hsl(245deg, 75%, 62%);
+  text-decoration: none;
+}
+.card-conteiner .content-section .proceed-btn {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  padding: 0.9rem;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  box-shadow: 0px 12px 40px -15px hsl(245deg, 75%, 52%);
+}
+.card-conteiner .content-section .proceed-btn:hover {
+  background-color: hsl(245deg, 75%, 62%);
+}
+.card-conteiner .content-section .cancel-btn {
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+}
+.card-conteiner .content-section .cancel-btn:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media (max-width: 1000px) {
+  .body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}
+@media (max-width: 500px) {
+  .card-conteiner .content-section {
+    padding: 1.5rem;
+  }
+  .card-conteiner .content-section .title {
+    font-size: 1.4rem;
+  }
+  .card-conteiner .content-section .plan-offer-box {
+    padding: 1rem;
+  }
+  .card-conteiner .content-section .plan-offer-box .left-item .annual-plan-box {
+    gap: 0.2rem;
+  }
+  .card-conteiner .content-section .plan-offer-box .left-item .annual-plan-box .subtitle,
+.card-conteiner .content-section .plan-offer-box .left-item .annual-plan-box .price {
+    font-size: 0.9rem;
+  }
+  .card-conteiner .content-section .plan-offer-box .right-item .change-btn {
+    font-size: 0.8rem;
+  }
+  .card-conteiner .content-section .cancel-btn {
+    transform: translateY(-0.45rem);
+  }
+}
+@media (max-width: 345px) {
+  .card-conteiner {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .card-conteiner .content-section .plan-offer-box {
+    flex-direction: column;
+  }
+  .card-conteiner .content-section .plan-offer-box .left-item {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

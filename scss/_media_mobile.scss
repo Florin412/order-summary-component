@@ -1,0 +1,62 @@
+// This is the media for a normal mobile device.
+
+@media (max-width: 1000px) {
+  .body {
+    background-image: url(/images/pattern-background-mobile.svg); // Background image for mobile.
+  }
+}
+
+@media (max-width: 500px) {
+  .card-conteiner {
+    .content-section {
+      padding: 1.5rem;
+
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .plan-offer-box {
+        padding: 1rem;
+
+        .left-item {
+          .annual-plan-box {
+            gap: 0.2rem;
+
+            .subtitle,
+            .price {
+              font-size: 0.9rem;
+            }
+          }
+        }
+
+        .right-item {
+          .change-btn {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .cancel-btn {
+        transform: translateY(-0.45rem);
+      }
+    }
+  }
+}
+
+// This is the media for a fold mobile device.
+@media (max-width: 345px) {
+  .card-conteiner {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    .content-section {
+      .plan-offer-box {
+        flex-direction: column;
+
+        .left-item {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
