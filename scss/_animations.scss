@@ -1,0 +1,11 @@
+@keyframes spin {
+  from {
+    transform: rotateY(0deg) scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(360deg) scale(1);
+    opacity: 1;
+  }
+}
