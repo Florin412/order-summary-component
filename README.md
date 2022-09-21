@@ -1,4 +1,4 @@
-# order-summary-component
+# Order summary component
 
 ![](./design/desktop-design.jpg)
 
